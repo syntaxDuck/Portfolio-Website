@@ -1,0 +1,77 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1{
+  color: black;
+  font-family:'Roboto', sans-serif;
+}
+
+p {
+  color: black;
+  font-family: 'Kaisei HarunoUmi', serif;
+}
+
+body, html {
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    overflow: hidden;
+}
+
+.navigationBar {
+  background-color: white;
+  text-align: right;
+  border: 2px solid black;
+
+  justify-items: right;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+}
+
+.navLinks li:hover {
+  background-color: grey;
+}
+
+.navLinks li{
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  list-style-type: none;
+  list-style-image: none;
+  padding: 1rem;
+}
+
+.mainGrid {
+  width: 80%;
+  height: inherit;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20%;
+  margin-bottom: auto;
+  background-color: rgb(255, 255, 255);
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.splashScreen {
+  width: inherit;
+  height: inherit;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+
+  display: flex;
+
+  text-align: center;
+  background-color: white;
+}

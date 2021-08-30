@@ -23,29 +23,47 @@ body, html {
 
 .navigationBar {
   background-color: white;
-  text-align: right;
   border: 2px solid black;
 
-  justify-items: right;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.navigationBar>*:first-child{
+  align-self: stretch;
+}
+
+.logo {
+  width: 8%;
+  height: 8%;
+  margin-right: auto;
 }
 
 .navLinks {
-  list-style: none;
+  font-family: 'Roboto', sans-serif;
+  list-style-type: none;
+  list-style-image: none;
+
   display: flex;
   flex-direction: row-reverse;
-  align-items: flex-end;
+  align-items: stretch;
+}
+
+.navLinks li{
+  margin-left: 1em;
+  margin-right: 1em;
+
+  display: flex;
+  align-items: stretch;
+}
+
+a {
+  margin: auto;
 }
 
 .navLinks li:hover {
   background-color: grey;
-}
-
-.navLinks li{
-  font-family: 'Roboto', sans-serif;
-  text-align: center;
-  list-style-type: none;
-  list-style-image: none;
-  padding: 1rem;
 }
 
 .mainGrid {

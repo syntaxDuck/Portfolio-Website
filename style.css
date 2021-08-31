@@ -1,3 +1,7 @@
+:root{
+  --backgroundColor: #bbbbbb;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -17,12 +21,12 @@ p {
 body, html {
     width: 100vw;
     height: 100vh;
-    background: black;
+    background: var(--backgroundColor);
     overflow: hidden;
 }
 
 .navigationBar {
-  background-color: white;
+  background-color: var(--backgroundColor);
   border: 2px solid black;
 
   display: flex;
@@ -38,6 +42,7 @@ body, html {
   width: 8%;
   height: 8%;
   margin-right: auto;
+  opacity:0.75;
 }
 
 .navLinks {
@@ -47,19 +52,12 @@ body, html {
 
   display: flex;
   flex-direction: row-reverse;
-  align-items: stretch;
+  align-items: center;
 }
 
 .navLinks li{
   margin-left: 1em;
   margin-right: 1em;
-
-  display: flex;
-  align-items: stretch;
-}
-
-a {
-  margin: auto;
 }
 
 .navLinks li:hover {
